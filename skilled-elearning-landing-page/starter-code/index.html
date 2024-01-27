@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Skilled e-learning landing page</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+  <header class="active" id="header_frame">
+    <div class="navbar">
+      <img src="assets/logo-dark.svg" alt="Dark logo" class="logo">
+      <button class="button navbar-button">Get Started</button>
+    </div>
+  </header>
+  <main class="hero">
+    <div class="hero-text">
+      <h1>Maximize skill, minimize budget</h1>
+      <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+      <button class="hero-button button">Get Started</button>
+    </div>
+    <div class="hero-image">
+      <img src="assets/image-hero-mobile.png" alt="Hero mobile image" class="hero-image-mobile">
+      <img src="assets/image-hero-tablet.png" alt="Hero tablet image" class="hero-image-tablet">
+      <img src="assets/image-hero-desktop.png" alt="Hero desktop image" class="hero-image-desktop">
+    </div>
+  </main>
+  <section class="courses">
+    <div class="courses-grid">
+      <div class="courses-grid-first">
+        <h2>Check out our most popular courses!</h2>
+      </div>
+      <div class="courses-grid-child">
+        <img src="assets/icon-animation.svg" alt="Animation picto" class="courses-grid-picto">
+        <h3>Animation</h3>
+        <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+        <a href="#">Get Started</a>
+      </div>
+      <div class="courses-grid-child">
+        <img src="assets/icon-design.svg" alt="Design icon" class="courses-grid-picto">
+        <h3>Design</h3>
+        <p>Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+        <a href="#">Get Started</a>
+      </div>
+      <div class="courses-grid-child">
+        <img src="assets/icon-photography.svg" alt="Photography icon" class="courses-grid-picto">
+        <h3>Photography</h3>
+        <p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+        <a href="#">Get Started</a>
+      </div>
+      <div class="courses-grid-child">
+        <img src="assets/icon-crypto.svg" alt="Crypto icon" class="courses-grid-picto">
+        <h3>Crypto</h3>
+        <P>All you need to know to get started investing in crypto. Go from beginner 
+          to advanced with this 54 hour course.</P>
+        <a href="#">Get Started</a>
+      </div>
+      <div class="courses-grid-child">
+        <img src="assets/icon-business.svg" alt="Business icon" class="courses-grid-picto">
+        <h3>Business</h3>
+        <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+        <a href="#">Get Started</a>
+      </div>
+    </div>
+  </section>
+<footer>
+  <script>
+    jQuery(window).on('scroll', function() {
+      if(jQuery(window).scrollTop() > 50) {
+          jQuery('#header_frame').css('background-color', '#FFFFFF');
+      } else {
+        jQuery('#header_frame').css('background-color', 'transparent');
+      }
+    });
+  </script>
+  <div class="container-footer">
+    <img src="assets/logo-light.svg" alt="light logo ">
+    <button class="button footer-button">Get started</button>
+  </div>
+</footer>
+</body>
+</html>
